@@ -12,10 +12,8 @@ import com.ma.models.VehicleSpecModel;
 
 /**
  * The class starts the application and prints the results to the console
- * @author Muhammad
- * 
+ * @author Muhammad 
  */
-
 @SpringBootApplication
 public class Application {
 
@@ -28,7 +26,6 @@ public class Application {
 		an.initialise();
 		List<Vehicle> vehicleList = an.VehicleList;
 
-        
         // Task 1
         priceAscending(vehicleList);
         
@@ -43,7 +40,7 @@ public class Application {
         
 	}
 	
-	// Task 1
+	// Task 1 to console
 	public static void priceAscending(List<Vehicle> x){
         x = Analysis.priceAscending(x);
 		System.out.println("--- Price Ascending! ---");
@@ -53,7 +50,7 @@ public class Application {
 		}
 	}
 	
-	//Task 2
+	//Task 2 to console
 	public static void printVehicleSpec(List<Vehicle> x){
 		List<VehicleSpecModel> mm = Analysis.vehicleSpec(x);
 	
@@ -79,7 +76,7 @@ public class Application {
 		
 	}
 	
-	//Task 3
+	//Task 3 to console
 	public static void printRatingDescending(List<Vehicle> x){
 		
 		List<VehicleSpecModel> bn = Analysis.supplierRatingByType(x);
@@ -99,7 +96,7 @@ public class Application {
 		
 	}
 	
-	//Task 4
+	//Task 4 to console
 	public static void printRatingBreakdownDescending(List<Vehicle> x){
 		
 		List<Vehicle> vehicleList = Analysis.ratingBreakdownDescending(x);

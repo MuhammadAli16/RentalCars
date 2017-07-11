@@ -31,9 +31,7 @@ public class Testing {
 	   }
 	   
 	   
-	   /*
-	    * Check if data correctly input into list
-	    */
+	   /* Check if data correctly input into list */
 	   @Test
 	   public void json(){
 		   int size = 31;
@@ -136,7 +134,5 @@ public class Testing {
 		   
 	   }
 	   
-
-
 
 }

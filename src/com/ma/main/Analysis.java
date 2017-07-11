@@ -23,7 +23,6 @@ import com.ma.models.VehicleSpecModel;
 /**
  * This class reads in the json with the data input into a list of vehicles
  * Also consists of methods that solve tasks
- * 
  * @author Muhammad
  */
 public class Analysis {
@@ -246,26 +245,19 @@ public class Analysis {
 
 	/* COMPARATORS */
 	
-	/**
-	 * @return sorted list of vehicles by Student Name in ascending order
-	 */
+	/** sorts list of vehicles by Student Name in ascending order */
     public static Comparator<Vehicle> vehiclePriceComparatorAscending = new Comparator<Vehicle>() {
 
 	public int compare(Vehicle s1, Vehicle s2) {
 	   double vehicle1 = s1.getPrice();
 	   double vehicle2 = s2.getPrice();
 	   
-	   //ascending order - When using Double object
-	   //return vehicle1.compareTo(vehicle2);
-	   
 	   //ascending order
 	   return Double.compare(vehicle1, vehicle2);
     }};
     
         
-    /**
-	 * @return sorted list of vehicles by Rating in descending order
-	 */
+    /** sorts list of vehicles by Rating in descending order */
     public static Comparator<Vehicle> vehicleCombinedRatingComparatorDescending = new Comparator<Vehicle>() {
 
     public int compare(Vehicle s1, Vehicle s2) {
