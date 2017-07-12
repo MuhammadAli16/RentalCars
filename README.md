@@ -2,10 +2,11 @@
 Coding test for RentalCars.com  
 Output done through Rest API  
 Java 1.8
+Tomcat Embed Jasper 8.0.20
 
 ### Libraries Used
 * Spring Boot     1.2.3  
-* Jackson Core    2.2.3
+* Jackson Core    2.4.5
 
 /all Shows all vehicles  
 /priceascending  Task 1 Price ascending order  
